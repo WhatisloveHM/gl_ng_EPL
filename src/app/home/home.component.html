@@ -1,0 +1,26 @@
+<h3>Home</h3>
+<table class="table table-striped">
+  <thead>
+      <tr>
+          <td>Team Name</td>
+          <td>City</td>
+          <td>Coach</td>
+          <td>President</td>
+          <td>Total Cost</td>
+          <td></td>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let team of teams">
+        <td>{{team.teamName | uppercase}}</td>
+        <td>{{team.city}}</td>
+        <td>{{team.coach}}</td>
+        <td>{{team.president}}</td>
+        <td>{{team.cost | currency: 'USD' : 'symbol-narrow'}}</td>
+        <td>
+          <input type="button" value="Detail" class="btn btn-default" [routerLink]="['/detail', team.teamId]" />
+        </td>
+      </tr>
+  </tbody>
+</table>
+<input type="button" value="Logout" class="btn btn-default" routerLink="/" />
