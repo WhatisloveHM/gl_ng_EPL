@@ -1,5 +1,5 @@
-export class LogService{
-  write(logMessage:string){      
-      console.log(logMessage);
+export class LogService {
+  write(logMessage: string) {
+    console.log(logMessage);
   }
 }
