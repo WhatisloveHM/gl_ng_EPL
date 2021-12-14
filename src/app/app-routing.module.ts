@@ -6,18 +6,10 @@ import { HomeComponent }   from './home/home.component';
 import { DetailComponent }   from './detail/detail.component';
 import { NotFoundComponent }   from './not-found.component';
 
-// import { TeamDetailsComponent }   from './detail/team.details.components';
-
-
-// const detailRoutes = [
-//   { path: 'details', component: TeamDetailsComponent},
-// ]
-
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'detail/:id', component: DetailComponent },
-  // { path: 'detail/:id', component: DetailComponent, children: detailRoutes },
   { path: '**', component: NotFoundComponent },
 ];
 

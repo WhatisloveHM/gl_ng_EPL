@@ -6,7 +6,7 @@ import { Team } from '../models/team'
     selector: 'home-app',
     templateUrl: './home.component.html',
 })
-export class HomeComponent { 
+export class HomeComponent implements OnInit{ 
     teams: Team[] = [];
 
     constructor(private httpService: HttpService){}

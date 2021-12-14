@@ -5,7 +5,7 @@
     "city": "city1",
     "coach": "coach1",
     "president": "president1",
-    "total_cost": 100
+    "total_cost": 100.1
   },
   {
     "teamId": 2,
@@ -13,7 +13,7 @@
     "city": "city2",
     "coach": "coach2",
     "president": "president2",
-    "total_cost": 200
+    "total_cost": 200.12
   },
   {
     "teamId": 3,
@@ -21,6 +21,6 @@
     "city": "city3",
     "coach": "coach3",
     "president": "president3",
-    "total_cost": 300
+    "total_cost": 300.55
   }
 ]

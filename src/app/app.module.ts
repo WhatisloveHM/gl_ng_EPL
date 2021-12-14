@@ -14,8 +14,7 @@ import { LoginComponent }   from './login/login.component';
 import { HomeComponent }   from './home/home.component';
 import { DetailComponent }   from './detail/detail.component';
 import { NotFoundComponent }   from './not-found.component';
-
-// import { TeamDetailsComponent }   from './detail/team.details.components';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,13 +23,13 @@ import { NotFoundComponent }   from './not-found.component';
     HomeComponent,
     DetailComponent,
     NotFoundComponent,
-    // TeamDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [HttpService, LogService],
   bootstrap: [AppComponent]

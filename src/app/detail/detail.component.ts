@@ -8,7 +8,7 @@ import { Player } from '../models/player'
     selector: 'detail-app',
     templateUrl: './detail.component.html',
 })
-export class DetailComponent{
+export class DetailComponent implements OnInit{
   teamId: any;
   players: Player[] = [];
   private routeSubscription: Subscription;
@@ -16,12 +16,8 @@ export class DetailComponent{
   constructor(private route: ActivatedRoute, private httpService: HttpService){     
       this.routeSubscription = route.params.subscribe(params=>this.teamId=params['id']);
   }
-  // constructor(private teamId: number){}
-
 
   ngOnInit(){        
-    console.log(this.teamId)
     this.httpService.getPlayers(parseInt(this.teamId)).subscribe((data: Player[]) => this.players = data);
-
   }
 }

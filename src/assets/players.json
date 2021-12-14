@@ -11,8 +11,6 @@
     "firstName": "PlayerName2",
     "surName": "PlayerSurName2"
   },
-  
-
   {
     "playerId": 3,
     "teamId": 2,
@@ -31,7 +29,6 @@
     "firstName": "PlayerName5",
     "surName": "PlayerSurName5"
   },
-
   {
     "playerId": 6,
     "teamId": 3,
